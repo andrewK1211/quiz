@@ -1,0 +1,4 @@
+<h1>{{ quiz.quiz_name }}</h1>
+<a href="{% url 'question' quiz.id first_question.id %}">Start</a>
+<br>
+<a href="{% url 'index' %}">Back to Quiz List</a>
