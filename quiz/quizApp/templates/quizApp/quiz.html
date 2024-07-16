@@ -1,4 +1,8 @@
 <h1>{{ quiz.quiz_name }}</h1>
+{% if first_question %}
 <a href="{% url 'question' quiz.id first_question.id %}">Start</a>
+{% else %}
+<p>No questions exist for this quiz</p>
+{% endif %}
 <br>
 <a href="{% url 'index' %}">Back to Quiz List</a>
